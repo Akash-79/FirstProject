@@ -47,3 +47,5 @@ def updateEmp(request):
     t=(name,contact,address,id)
     EmpUpdate(t)
     return redirect("/empList")
+
+#Hii 
