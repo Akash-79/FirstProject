@@ -1,0 +1,43 @@
+<body style="background-color: yellow;">
+    <h1>
+        This is Update Emp Form</h1>
+
+    <form action="updateEmp" method="POST">
+        {% csrf_token%}
+        <table cellpading="10" cellspacing="10" border="1">
+            <tr>
+
+                <td>Id</td>
+                <td><input type="text" name="id" value="{{e.0}}"></td>
+
+            </tr>
+            <tr>
+
+                <td>Name</td>
+                <td><input type="text" name="name" value="{{e.1}}"></td>
+
+            </tr>
+            <tr>
+
+                <td>Contact</td>
+                <td><input type="text" name="contact" value="{{e.2}}"></td>
+
+            </tr>
+            <tr>
+
+                <td>Address</td>
+                <td><input type="text" name="address" value="{{e.3}}"></td>
+
+            </tr>
+
+            <tr>
+
+                <td><input type="submit" value="Update"></td>
+                <td><input type="reset" value="Reset"></td>
+
+            </tr>
+
+        </table>
+
+    </form>
+</body>
